@@ -24,7 +24,6 @@ firebaserc
 .firebase.json
 database.rules.json
 
-
 # Compiled binary addons
 dist
 build/Release
@@ -64,6 +63,7 @@ node_modules/
 .idea
 
 # Runtime data 
+
 pids
 *.pids
 *.seed
