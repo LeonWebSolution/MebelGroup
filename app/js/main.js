@@ -21,4 +21,14 @@ $(function () {
         header.classList.toggle('sticky', this.window.scrollY > 0)
     });
 
+    // Slider //
+
+    $('.slider__inner').slick({
+        dots: true,
+        arrows: false,
+        sliderToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true
+    });
+
 });
