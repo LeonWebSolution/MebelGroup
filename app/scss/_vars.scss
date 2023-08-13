@@ -1,0 +1,25 @@
+$text: #202020;
+$balck: #000;
+$white: #fff;
+$header-top-bg: #edebe9;
+$hover: #777;
+
+@mixin f400 {
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-weight: 400;
+}
+
+@mixin f500 {
+    font-family: 'Gilroy-SemiBold', sans-serif;
+    font-weight: 500;
+}
+
+@mixin f700 {
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-weight: 700;
+}
+
+@mixin f800 {
+    font-family: 'Gilroy-ExtraBold', sans-serif;
+    font-weight: 800;
+}
