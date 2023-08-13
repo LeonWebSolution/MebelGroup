@@ -40,4 +40,11 @@ $(function () {
         }
     });
 
+    $('#newItemsloadMore').click(function () {
+        $('#newBoxs .newbox:hidden').slice(0, 4).slideDown()
+        if (($('#newBoxs .newbox:hidden')).length == 0)   {
+            $('#newItemsloadMore').fadeOut('slow')
+        }
+    });
+
 });
