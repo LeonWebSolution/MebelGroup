@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Gilroy-ExtraBold', sans-serif;
+    src: url('../fonts/Gilroy-ExtraBold.ttf') format('ttf'),
+    url('../fonts/Gilroy-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-display: swap
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold', sans-serif;
+    src: url('../fonts/Gilroy-Bold.ttf') format('ttf'),
+    url('../fonts/Gilroy-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap
+}
+
+@font-face {
+    font-family: 'Gilroy-SemiBold', sans-serif;
+    src: url('../fonts/Gilroy-SemiBold.ttf') format('ttf'),
+    url('../fonts/Gilroy-SemiBold.woff') format('woff');
+    font-weight: 500;
+    font-display: swap
+}
+
+@font-face {
+    font-family: 'Gilroy-Regular', sans-serif;
+    src: url('../fonts/Gilroy-Regular.ttf') format('ttf'),
+    url('../fonts/Gilroy-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap
+}
