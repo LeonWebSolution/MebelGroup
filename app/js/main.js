@@ -31,6 +31,16 @@ $(function () {
         autoplay: true
     });
 
+    // Collections //
+
+    $('.collections__inner').slick({
+        dots: false,
+        arrows: true,
+        sliderToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false
+    });
+
     // Load more // 
 
     $('#loadMore').click(function () {
