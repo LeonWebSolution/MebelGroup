@@ -968,3 +968,83 @@
 }
 
 // End Collections//
+
+// start cursor //
+
+.js-slider{
+    cursor: none;
+    overflow: hidden;
+}
+
+.cursor{
+    position: absolute;
+    border: 0 solid $white;
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+    z-index: 7777;
+    user-select: none;
+    pointer-events: none;
+}
+
+.cursor.active{
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 150px;
+    height: 144px;
+    border: 1px solid $white;
+    border-radius: 43% 58% 70% 30% / 45% 45% 55% 55%;
+    animation: morph 3s linear infinite;
+    transform-style: preserve-3d;
+    outline: 1px solid transparent;
+    will-change: border-radius;
+    cursor: none;
+}
+
+.cursor.active::before{
+    opacity: 1;
+    content: "<Pull>";
+    position: absolute;
+    top: 65px;
+    left: 65px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    color: $white;
+    @include f700;
+    border-radius: 43% 58% 70% 30% / 45% 45% 55% 55%;
+}
+
+.cursor.active.hoverBtn{
+    width: 0;
+    height: 0;
+}
+
+.cursor.active.hoverBtn::before{
+    content: '';
+}
+
+@keyframes morph {
+    0%,
+    100%{
+        border-radius: 43% 58% 70% 30% / 45% 45% 55% 55%;
+        transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    34%{
+        border-radius: 70% 30% 46% 54% / 30% 29% 71% 71%;
+        transform: translate3d(0,5px,0) rotateZ(0.01deg);
+    }
+    50%{
+       opacity: .89;
+        transform: translate3d(0,5px,0) rotateZ(0.01deg);
+    }
+    67%{
+        opacity: 100% 60% 60% 100% / 100% 100% 60% 60%;
+         transform: translate3d(0,5px,0) rotateZ(0.01deg);
+     }
+    
+}
+// end cursor //
