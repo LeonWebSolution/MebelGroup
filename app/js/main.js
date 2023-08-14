@@ -57,6 +57,57 @@ $(function () {
         }
     });
 
+    // Hamburger //
+
+    $('.hamburger').click(function () {
+        $(this).toggleClass('on')
+        $('.sales-leaders__discount').toggleClass('off');
+        $('.new-items__discount').toggleClass('off');
+        $('.slick-arrow').toggleClass('off');
+    })
+
+    // Sitebar //
+
+    $("ul.main-menu li").click(function (e) {
+        e.preventDefault();
+    
+        if ($(this).siblings("li").find("ul.sidebar__submenu:visible").length) {
+          $("ul.sidebar__submenu").slideUp("normal");
+        }
+        $(this).find("ul.sidebar__submenu").slideToggle("normal");
+      });
+    
+      var t1 = new TimelineMax({paused: true});
+    
+      t1.to(".menu", 0.3, {
+        autoAlpha: 1,
+      });
+    
+      t1.staggerFrom(
+        ".main-menu li a:not(.sidebar__submenu li a)",
+        1,
+        {
+          opacity: 0,
+          y: 10,
+          ease: Power3.easeInOut,
+        },
+        0.1
+      );
+    
+      t1.from(".sidebar__submenu", 0.3, {
+        autoAlpha: 0,
+      });
+    
+      t1.reverse();
+    
+      $(document).on("click", ".menu-btn", function () {
+        t1.reversed(!t1.reversed());
+      });
+    
+      $(document).on("click", ".close-menu", function () {
+        t1.reversed(!t1.reversed());
+      });
+
     // Cursor //
 
     var cursor = $('.cursor'), 
@@ -113,3 +164,5 @@ $(function () {
     });
 
 });
+
+

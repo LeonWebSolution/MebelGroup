@@ -50,10 +50,10 @@
                     <a class="header__btn-menu" href="#"><i class="fa-solid fa-user"></i></a>
                     <a class="header__btn-menu" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                     <div class="header___btn-menu">
-                        <div class="hamburger">
-                            <div class="hamburger__span one"></div>
-                            <div class="hamburger__span two"></div>
-                            <div class="hamburger__span three"></div>
+                        <div class="hamburger menu-btn" id="toggle">
+                            <div class="hamburger__span one" id="one"></div>
+                            <div class="hamburger__span two" id="two"></div>
+                            <div class="hamburger__span three" id="three"></div>
                         </div>
                     </div>
                 </div>
@@ -971,6 +971,178 @@
             </div>
           </div>
         </section>
+        <!-- Start Sitebar -->
+        <div class="menu">
+          <div class="close-menu">
+            <ion-icon name="close"></ion-icon>
+          </div>
+
+          <div class="nav">
+            <ul class="main-menu">
+              <li class="main-menu__item sidebar__title">Каталог</li>
+
+              <li class="main-menu__item">
+                <a href="#">chairs
+                  <ion-icon name="add"></ion-icon>
+                </a>
+                <ul class="sidebar__submenu">
+                  <li class="submenu-item">
+                    <a href="#">Стулья</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="#">Кресла</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="#">Барные стулья</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="#">Табуретки</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="#">Складные стулья</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="#">Детские стулья</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="main-menu__item">
+                <a href="#">Столы
+                  <ion-icon name="add"></ion-icon>
+                </a>
+                <ul class="sidebar__submenu">
+                  <li class="submenu-item">
+                    <a href="#">Обеденные столы</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="#">Барные столы</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="#">Кофейные столы</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="#">Компьютерные столы</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="#">Детские столы</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="main-menu__item">
+                <a href="#">Компьютерные кресла
+                  <ion-icon name="add"></ion-icon>
+                </a>
+                <ul class="sidebar__submenu">
+                  <li class="submenu-item">
+                    <a href="#">Игровые кресла</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="#">Офисные кресла</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="#">Коффейные кресла</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="#">Детские кресла</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="main-menu__item">
+                <a href="#">Банкетная фурнитура
+                  <ion-icon name="add"></ion-icon>
+                </a>
+                <ul class="sidebar__submenu">
+                  <li class="submenu-item">
+                    <a href="#">Банкетные стулья</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="#">Банкетные столы</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="#">Фурнитура для кейтеринга</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="main-menu__item">
+                <a href="#">Наборы
+                  <ion-icon name="add"></ion-icon>
+                </a>
+                <ul class="sidebar__submenu">
+                  <li class="submenu-item">
+                    <a href="#">Обеденные наборы</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="#">Комплекты стульев</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="main-menu__item">
+                <a href="#">Другое
+                  <ion-icon name="add"></ion-icon>
+                </a>
+                <ul class="sidebar__submenu">
+                  <li class="submenu-item">
+                    <a href="#">Консоли</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="#">Пуфики</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="#">Свечи</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="#">Аксессуары</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="main-menu__item">
+                <a href="#">Коллекции
+                  <ion-icon name="add"></ion-icon>
+                </a>
+                <ul class="sidebar__submenu">
+                  <li class="submenu-item">
+                    <a href="#">Eames</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="#">Tolix</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="#">Soft Arm</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="#">Disigner collection</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="main-menu__item">
+                <a href="#">Скидки
+                  <ion-icon name="add"></ion-icon>
+                </a>
+                <ul class="sidebar__submenu">
+                  <li class="submenu-item">
+                    <a href="#">Распродажа</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="#">Акции</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="main-menu__item sidebar__title">Контакты</li>
+              <li class="main-menu__item sidebar__title">Служба поддержки</li>
+              <li class="main-menu__item sidebar__title">Личный кабинет</li>
+
+            </ul>
+          </div>
+        </div>
+        <!-- End Sitebar -->
       </div>
       <footer class="footer">
         <div class="container">
@@ -1027,6 +1199,7 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     <script src="./js/libs.min.js"></script>
     <script src="./js/main.js"></script>
