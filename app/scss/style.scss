@@ -721,3 +721,72 @@
 }
 
 // End Projects //
+// Start Footer //
+
+.footer{
+    background-color: $gray;
+    &__inner{
+        padding: 100px 180px 0;
+        &-title{
+            margin-bottom: 50px;
+        }
+    }
+
+    &__items{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item{
+        padding: 0 15px;
+        &-title{
+            font-size: 20px;
+            @include f700;
+            margin-bottom: 24px;
+        }
+    }
+    &__item-list li{
+        margin: 16px 0;
+    }
+    
+    &__item-list li a:hover{
+        color: $hover;
+    }
+
+    &__item-list li a img{
+        max-width: 114px;
+        width: 100%;
+    }
+
+    &__item-list li a .icon__payments{
+        max-width: 200px;
+    }
+
+    &__bottom{
+        padding: 90px 0 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        &-copyright{
+            font-size: 14px;
+            @include f700;
+        }
+        &-privacy,
+        &-termsofUSe{
+            font-size: 14px;
+            line-height: 1.715;
+            transition: all 0.3s ease;
+            color: $hover;
+            cursor: pointer;
+        }
+
+        &-privacy:hover,
+        &-termsofUSe:hover{
+            color: $text;
+        }
+    }
+}
+
+// End Footer//
