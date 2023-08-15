@@ -67,19 +67,19 @@ gulp.task('browser-sync', function() {
 
 gulp.task('export', async function() {
     let buildHTML = gulp.src('app/**/*.html')
-    .pipe(gulp.dest(build));
+    .pipe(gulp.dest('build'));
 
     let buildCSS = gulp.src('app/css/*.css')
-    .pipe(gulp.dest(build/css));
+    .pipe(gulp.dest('build/css'));
 
     let buildJS= gulp.src('app/js/**/*.js')
-    .pipe(gulp.dest(build/js));
+    .pipe(gulp.dest('build/js'));
 
     let buildFonts= gulp.src('app/fonts/**/*.*')
-    .pipe(gulp.dest(build/fonts));
+    .pipe(gulp.dest('build/fonts'));
 
     let buildIMG= gulp.src('app/images/**/*.*')
-    .pipe(gulp.dest(build/images));
+    .pipe(gulp.dest('build/images'));
 });
 
 gulp.task('watch', function () {
