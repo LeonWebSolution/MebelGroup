@@ -193,7 +193,7 @@
     &__inner{
         display: flex;
         justify-content: space-evenly;
-        height: 80px;
+        height: 50px;
         align-items: center;
         overflow: hidden;
         &--left ul,
@@ -204,7 +204,7 @@
         &--left ul li,
         &--right ul li{
            padding: 0 14px;
-           height: 80px;
+           height: 40px;
         }
 
         &--left ul li a,
@@ -227,7 +227,7 @@
             background-color: $peach;
             position: absolute;
             left: 0;
-            top: 180px;
+            top: 150px;
             width: 100%;
             overflow: hidden;
             height: 0;
@@ -407,6 +407,7 @@
         justify-content: space-between;
         flex-wrap: wrap;
         margin-bottom: 40px;
+        
     }
     &__inner{
         padding: 30px;
@@ -873,6 +874,7 @@
         &__img img{
             max-height: 560px;
             width: 100%;
+            object-fit: cover;
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;

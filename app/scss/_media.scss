@@ -1,0 +1,253 @@
+
+@media (max-width: 1770px) {
+    .projects__card img{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1386px) {
+    .header-box--left{
+        padding-right: 300px;
+    }
+
+    .header__search-form{
+        left: 57%;
+    }
+}
+
+@media (max-width: 1306px) {
+   .sales-leaders__items,
+   .new-items__items{
+        justify-content: center;
+   }
+}
+
+@media (max-width: 1286px) {
+    .header-box--left{
+        padding-right: 250px;
+    }
+
+    .header__search-form{
+        width: 500px;
+        left: 60%;
+    }
+
+}
+
+@media (max-width: 1286px) {
+    .header-box--left{
+        padding-right: 250px;
+    }
+
+    .header__search-form{
+        width: 500px;
+        left: 60%;
+    }
+
+}
+
+@media (max-width: 1242px) {
+    .header-box--left{
+        padding-right: 150px;
+    }
+    .header__search-form{
+        width: 400px;
+    }
+}
+
+@media (max-width: 1136px) {
+    .header-box--left{
+        padding-right: 50px;
+    }
+    .header__search-form{
+        width: 300px;
+    }
+}
+
+@media (max-width: 1036px) {
+    .header__menu{
+        display: none;
+    }
+
+    .header__search-form{
+        left: 50%;
+    }
+
+    .new-items{
+        padding: 0;
+    }
+
+    .categories__inner--left,
+    .categories__inner--right{
+        display: none;
+    }
+
+    .categories__inner{
+        height: 40px;
+    }
+
+    .collections__item-wrapper{
+        flex-wrap: wrap;
+    }
+
+    .collections__item-left{
+        max-width: 100%;
+    }
+
+    .collections__item-right{
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .collections__item-right__inner{
+        padding-top: 10%;
+    }
+
+    .footer__item{
+        padding: 15px 15px;
+    }
+
+    .slick-arrow{
+        top: 30%;
+    }
+}
+
+@media (max-width: 800px) {
+    .header__delivery {
+        display: none;
+    }
+    .header__search-form{
+        width: 150px;
+    }
+    .collections__item-right{
+        flex-direction: column;
+    }
+
+    .collections__item-right__img img{
+        max-width: 100%;
+        width: 70%;
+        min-height: 100%;
+        margin: auto;
+    }
+
+    .projects__card-inner img{
+        max-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+    }
+
+    .footer__inner{
+        padding: 100px 50px 0;
+    }
+
+    .header__text{
+        display: none;
+    }
+}
+
+@media (max-width: 630px) {
+    .slider__item-info,
+    .collections__item-left__info{
+        left: 50px;
+    }
+    .header-box--left{
+        padding-right: 300px;
+        
+    }
+    #search {
+        display: none;
+    }
+
+    .user{
+        display: none;
+    }
+    .header-box--right{
+        display: none;
+    }
+    .header__search-form{
+        display: none;
+    }
+}
+
+@media (max-width: 570px) {
+    .header-box--left{
+        padding-right: 250px;   
+    }
+}
+
+@media (max-width: 532px) {
+    .header-box--left{
+        padding-right: 200px;   
+    }
+    .slider__title,
+    .collections__item-left__title{
+        font-size: 50px;
+        line-height: 60px;
+        max-width: 300px;
+    }
+
+    .footer{
+        text-align: center;
+    }
+
+    .footer__items{
+        justify-content: center;
+    }
+    
+    .footer__bottom{
+        padding: 50px 0;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 570px) {
+    .header-box--left{
+        padding-right: 150px;   
+    }
+}
+
+@media (max-width: 570px) {
+    .header-box--left{
+        padding-right: 150px;   
+    }
+    .categories__inner {
+        height: 0px;
+    }
+    .header-top__inner{
+        height: 50px;
+    }
+    .categories{
+        padding-top: 60px;
+    }
+}
+
+@media (max-width: 430px) {
+    .header-box--left{
+        padding-right: 165px;   
+    }
+    .logo{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 390px) {
+    .header-box--left{
+        padding-right: 130px;   
+    }
+    .slider-title,
+    .collections__item-left__title{
+        max-width: 280px;
+        font-size: 40px;
+    }
+
+    .slider__item-info,
+    .collections__item-left__info{
+        left: 10px;
+    }
+}
+@media (max-width: 370px) {
+    .header-box--left{
+        padding-right: 90px;   
+    }
+}
